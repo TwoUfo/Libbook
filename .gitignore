@@ -1,0 +1,13 @@
+config.py
+.env
+
+*.log
+*.tmp
+
+__pycache__/
+.pytest_cache/
+.vscode/
+env/
+
+*.pem
+*.key
