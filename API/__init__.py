@@ -21,6 +21,6 @@ def create_app():
     
     api.add_namespace(ns)
     
-    CORS(app)
+    CORS(app, supports_credentials=True)
 
     return app
