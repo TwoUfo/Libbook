@@ -1,6 +1,7 @@
 from flask import Flask
 from .extensions import api, db, jwt
 from .resources import ns
+from flask_cors import CORS
 import os
 
 def create_app():
@@ -19,5 +20,7 @@ def create_app():
     jwt.init_app(app)
     
     api.add_namespace(ns)
+    
+    CORS(app)
 
     return app
